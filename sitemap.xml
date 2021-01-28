@@ -2,20 +2,6 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <sitemap>
-    <loc>https://kage-shadows.github.io/en/sitemap.xml</loc>
-    
-      <lastmod>2021-01-10T02:39:27+08:00</lastmod>
-    
-  </sitemap>
-  
-  <sitemap>
-    <loc>https://kage-shadows.github.io/ja/sitemap.xml</loc>
-    
-      <lastmod>2021-01-10T02:39:30+08:00</lastmod>
-    
-  </sitemap>
-  
-  <sitemap>
     <loc>https://kage-shadows.github.io/zh-cn/sitemap.xml</loc>
     
       <lastmod>2021-01-10T02:38:06+08:00</lastmod>
@@ -26,6 +12,13 @@
     <loc>https://kage-shadows.github.io/zh-tw/sitemap.xml</loc>
     
       <lastmod>2021-01-10T02:39:21+08:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>https://kage-shadows.github.io/en/sitemap.xml</loc>
+    
+      <lastmod>2021-01-10T02:39:27+08:00</lastmod>
     
   </sitemap>
   

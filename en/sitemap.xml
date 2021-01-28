@@ -3,22 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://kage-shadows.github.io/en/contact-us/</loc>
+    <lastmod>2021-01-28T02:15:13+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://kage-shadows.github.io/zh-cn/contact-us/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://kage-shadows.github.io/zh-tw/contact-us/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kage-shadows.github.io/en/contact-us/"
+                />
+  </url>
+  
+  <url>
     <loc>https://kage-shadows.github.io/en/post/hello-world/</loc>
     <lastmod>2021-01-10T02:39:27+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="ja"
-                href="https://kage-shadows.github.io/ja/post/hello-world/"
+                hreflang="zh-cn"
+                href="https://kage-shadows.github.io/zh-cn/post/hello-world/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
                 href="https://kage-shadows.github.io/zh-tw/post/hello-world/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://kage-shadows.github.io/zh-cn/post/hello-world/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -32,18 +47,13 @@
     <lastmod>2021-01-10T02:39:27+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="ja"
-                href="https://kage-shadows.github.io/ja/"
+                hreflang="zh-cn"
+                href="https://kage-shadows.github.io/zh-cn/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
                 href="https://kage-shadows.github.io/zh-tw/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://kage-shadows.github.io/zh-cn/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -57,18 +67,13 @@
     <lastmod>2021-01-10T02:39:27+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="ja"
-                href="https://kage-shadows.github.io/ja/post/"
+                hreflang="zh-cn"
+                href="https://kage-shadows.github.io/zh-cn/post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
                 href="https://kage-shadows.github.io/zh-tw/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://kage-shadows.github.io/zh-cn/post/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -79,11 +84,6 @@
   
   <url>
     <loc>https://kage-shadows.github.io/en/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kage-shadows.github.io/ja/categories/"
-                />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -103,11 +103,6 @@
   
   <url>
     <loc>https://kage-shadows.github.io/en/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://kage-shadows.github.io/ja/tags/"
-                />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
