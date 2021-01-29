@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="zh-tw" dir="auto">
 
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
@@ -7,15 +7,16 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Posts | Kage - Shadows</title>
+<title>檢索 | 影·Kage</title>
 
 <meta name="keywords" content="" />
-<meta name="description" content="">
+<meta name="description" content="檢索">
 <meta name="author" content="">
-<link rel="canonical" href="https://kage-shadows.github.io/en/post/" />
+<link rel="canonical" href="https://kage-shadows.github.io/zh-tw/search/" />
 <link href="/assets/css/stylesheet.min.dd8880218de039fe9acb23d48360e312cf853dd63cb9f6c2e8260d1ccfc3d683.css" integrity="sha256-3YiAIY3gOf6ayyPUg2DjEs&#43;FPdY8ufbC6CYNHM/D1oM=" rel="preload stylesheet"
     as="style">
-
+<link rel="preload" as="fetch" href="../index.json" crossOrigin="anonymous">
+<script defer src="/assets/js/search.min.a7aeaa5cf0049fa909d697d27b866f2885af48d7568415ef296894a5a2f82e49.js" onload="loadSearch();" integrity="sha256-p66qXPAEn6kJ1pfSe4ZvKIWvSNdWhBXvKWiUpaL4Lkk="></script>
 <link rel="icon" href="https://kage-shadows.github.io/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://kage-shadows.github.io/favicon_16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://kage-shadows.github.io/favicon_32x32.png">
@@ -24,19 +25,48 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <meta name="generator" content="Hugo 0.80.0" />
-<link rel="alternate" type="application/rss&#43;xml" href="https://kage-shadows.github.io/en/post/index.xml">
-<link rel="alternate" hreflang="zh-cn" href="https://kage-shadows.github.io/zh-cn/post/" />
-<link rel="alternate" hreflang="zh-tw" href="https://kage-shadows.github.io/zh-tw/post/" />
+<link rel="alternate" hreflang="zh-cn" href="https://kage-shadows.github.io/zh-cn/search/" />
+<link rel="alternate" hreflang="en" href="https://kage-shadows.github.io/en/search/" />
 
 
-<meta property="og:title" content="Posts" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://kage-shadows.github.io/en/post/" />
-<meta property="og:updated_time" content="2021-01-10T02:39:27+08:00" /><meta property="og:site_name" content="Kage - Shadows" />
+<meta property="og:title" content="檢索" />
+<meta property="og:description" content="檢索" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kage-shadows.github.io/zh-tw/search/" />
+<meta property="og:site_name" content="影·Kage" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="檢索"/>
+<meta name="twitter:description" content="檢索"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "檢索",
+  "name": "檢索",
+  "description": "檢索",
+  "keywords": [
+    
+  ],
+  "articleBody": "",
+  "wordCount" : "0",
+  "inLanguage": "zh-tw",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kage-shadows.github.io/zh-tw/search/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "影·Kage",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kage-shadows.github.io/favicon.png"
+    }
+  }
+}
+</script>
 
 
 
@@ -61,7 +91,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://kage-shadows.github.io/en/" accesskey="h" title="Kage - Shadows (Alt + H)">Kage - Shadows</a>
+            <a href="https://kage-shadows.github.io/zh-tw/" accesskey="h" title="影·Kage (Alt + H)">影·Kage</a>
             <span class="logo-switches">
                 
                 <span class="lang-switch">
@@ -72,8 +102,8 @@
                                 aria-label="简体中文">简体中文</a>
                         </li>
                         <li>
-                            <a href="https://kage-shadows.github.io/zh-tw/" title="繁體中文"
-                                aria-label="繁體中文">繁體中文</a>
+                            <a href="https://kage-shadows.github.io/en/" title="English"
+                                aria-label="English">English</a>
                         </li>
                     </ul>
                 </span>
@@ -81,53 +111,56 @@
         </div>
         <ul class="menu" id="menu" onscroll="menu_on_scroll()">
             <li>
-                <a href="https://kage-shadows.github.io/en/categories/" title="Categories">
-                    <span>Categories</span>
+                <a href="https://kage-shadows.github.io/zh-tw/categories/ham%E5%B0%88%E5%8D%80/" title="HAM專區">
+                    <span>HAM專區</span>
                 </a>
             </li>
             <li>
-                <a href="https://kage-shadows.github.io/en/categories/hams-paraside/" title="HAM&#39;s Paradise">
-                    <span>HAM&#39;s Paradise</span>
+                <a href="https://kage-shadows.github.io/zh-tw/categories/" title="分類">
+                    <span>分類</span>
                 </a>
             </li>
             <li>
-                <a href="https://kage-shadows.github.io/en/tags/" title="Tags">
-                    <span>Tags</span>
+                <a href="https://kage-shadows.github.io/zh-tw/tags/" title="標籤">
+                    <span>標籤</span>
                 </a>
             </li>
             <li>
-                <a href="https://kage-shadows.github.io/en/search/" title="🔍 (Alt &#43; /)" accesskey=/>
-                    <span>🔍</span>
+                <a href="https://kage-shadows.github.io/zh-tw/search/" title="🔍 (Alt &#43; /)" accesskey=/>
+                    <span class="active">🔍</span>
                 </a>
             </li></ul>
     </nav>
 </header>
 
-    <main class="main"> 
+    <main class="main">
+
 <header class="page-header">
-  <h1>Posts</h1>
+    <h1>檢索
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+    </h1>
+    <div class="post-meta"><ul class="i18n_list">翻譯:
+            <li>
+                <a href="https://kage-shadows.github.io/zh-cn/search/">简体中文</a>
+            </li>
+            <li>
+                <a href="https://kage-shadows.github.io/en/search/">English</a>
+            </li>
+        </ul>
+    </div>
 </header>
 
-
-
-<article class="post-entry"> 
-
-  <header class="entry-header">
-    <h2>
-      Hello World!
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>Hello, World!...</p>
-  </section>
-  <footer class="entry-footer">January 10, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;19 words
-</footer>
-  <a class="entry-link" aria-label="post link to Hello World!" href="https://kage-shadows.github.io/en/post/hello-world/"></a>
-</article>
-
+<div id="searchbox">
+    <input id="searchInput" autofocus placeholder="檢索 ↵" aria-label="search">
+    <ul id="searchResults" aria-label="search results"></ul>
+</div>
     </main><footer class="footer">
-    <span>© 2021 Kage</span><span>&middot;</span><span><a href="https://kage-shadows.github.io/en/about-us">About Us</a></span>
-<span>&middot;</span><span><a href="https://kage-shadows.github.io/en/contact-us">Contact Us</a></span>
+    <span>© 2021 Kage</span><span>&middot;</span><span><a href="https://kage-shadows.github.io/zh-tw/about-us">關於我們</a></span>
+<span>&middot;</span><span><a href="https://kage-shadows.github.io/zh-tw/contact-us">聯絡我們</a></span>
     <br />
     <span>Powered by <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a></span>
     <span>&middot;</span>
@@ -143,8 +176,6 @@
 
 
 
-<script defer src="/assets/js/highlight.min.27cd435cc9ed6abb4b496581b151804f79f366c412620272bb94e2f5f598ebcc.js" integrity="sha256-J81DXMntartLSWWBsVGAT3nzZsQSYgJyu5Ti9fWY68w="
-    onload="hljs.initHighlightingOnLoad();"></script>
 <script>
     window.onload = function () {
         if (localStorage.getItem("menu-scroll-position")) {

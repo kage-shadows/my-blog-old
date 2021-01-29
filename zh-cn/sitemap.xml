@@ -120,4 +120,23 @@
                 />
   </url>
   
+  <url>
+    <loc>https://kage-shadows.github.io/zh-cn/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://kage-shadows.github.io/zh-tw/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kage-shadows.github.io/en/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://kage-shadows.github.io/zh-cn/search/"
+                />
+  </url>
+  
 </urlset>

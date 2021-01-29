@@ -25,6 +25,7 @@
 <meta name="msapplication-TileColor" content="#2e2e33">
 <meta name="generator" content="Hugo 0.80.0" />
 <link rel="alternate" type="application/rss&#43;xml" href="https://kage-shadows.github.io/en/index.xml">
+<link rel="alternate" type="application/json" href="https://kage-shadows.github.io/en/index.json">
 <link rel="alternate" hreflang="zh-cn" href="https://kage-shadows.github.io/zh-cn/" />
 <link rel="alternate" hreflang="zh-tw" href="https://kage-shadows.github.io/zh-tw/" />
 
@@ -57,11 +58,7 @@
 
 <body class="list" id="top">
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -80,28 +77,6 @@
         <div class="logo">
             <a href="https://kage-shadows.github.io/en/" accesskey="h" title="Kage - Shadows (Alt + H)">Kage - Shadows</a>
             <span class="logo-switches">
-                <span class="theme-toggle" title="(Alt + T)">
-                    <a id="theme-toggle" accesskey="t">
-                        <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                        </svg>
-                        <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="5"></circle>
-                            <line x1="12" y1="1" x2="12" y2="3"></line>
-                            <line x1="12" y1="21" x2="12" y2="23"></line>
-                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                            <line x1="1" y1="12" x2="3" y2="12"></line>
-                            <line x1="21" y1="12" x2="23" y2="12"></line>
-                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                        </svg>
-                    </a>
-                </span>
                 
                 <span class="lang-switch">
                     <span>|</span>
@@ -125,8 +100,18 @@
                 </a>
             </li>
             <li>
+                <a href="https://kage-shadows.github.io/en/categories/hams-paraside/" title="HAM&#39;s Paradise">
+                    <span>HAM&#39;s Paradise</span>
+                </a>
+            </li>
+            <li>
                 <a href="https://kage-shadows.github.io/en/tags/" title="Tags">
                     <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://kage-shadows.github.io/en/search/" title="🔍 (Alt &#43; /)" accesskey=/>
+                    <span>🔍</span>
                 </a>
             </li></ul>
     </nav>
@@ -167,18 +152,14 @@
   <section class="entry-content">
     <p>Hello, World!...</p>
   </section>
-  <footer class="entry-footer">January 10, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;10 words
+  <footer class="entry-footer">January 10, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;19 words
 </footer>
   <a class="entry-link" aria-label="post link to Hello World!" href="https://kage-shadows.github.io/en/post/hello-world/"></a>
 </article>
 
     </main><footer class="footer">
-    <span>&copy; 2021 <a href="https://kage-shadows.github.io/en/">Kage - Shadows</a></span>
-    <span>&middot;</span>
-    <span><a href="https://kage-shadows.github.io/en//about-us">About Us</a></span>
-    <span>&middot;</span>
-    <span><a href="https://kage-shadows.github.io/en//contact-us">Contact Us</a></span>
-    
+    <span>© 2021 Kage</span><span>&middot;</span><span><a href="https://kage-shadows.github.io/en/about-us">About Us</a></span>
+<span>&middot;</span><span><a href="https://kage-shadows.github.io/en/contact-us">Contact Us</a></span>
     <br />
     <span>Powered by <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a></span>
     <span>&middot;</span>
@@ -228,18 +209,6 @@
     function menu_on_scroll() {
         localStorage.setItem("menu-scroll-position", document.getElementById('menu').scrollLeft);
     }
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
 
 </script>
 
