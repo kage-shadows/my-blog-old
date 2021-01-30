@@ -13,7 +13,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="canonical" href="https://kage-shadows.github.io/en/" />
-<link href="/assets/css/stylesheet.min.dd8880218de039fe9acb23d48360e312cf853dd63cb9f6c2e8260d1ccfc3d683.css" integrity="sha256-3YiAIY3gOf6ayyPUg2DjEs&#43;FPdY8ufbC6CYNHM/D1oM=" rel="preload stylesheet"
+<link href="/assets/css/stylesheet.min.e57685e3822fa6e9cc9f10fc76ab982fbb819c5cca2f1ca518e0a72a49649f06.css" integrity="sha256-5XaF44IvpunMnxD8dquYL7uBnFzKLxylGOCnKklknwY=" rel="preload stylesheet"
     as="style">
 
 <link rel="icon" href="https://kage-shadows.github.io/favicon.png">
@@ -28,6 +28,7 @@
 <link rel="alternate" type="application/json" href="https://kage-shadows.github.io/en/index.json">
 <link rel="alternate" hreflang="zh-cn" href="https://kage-shadows.github.io/zh-cn/" />
 <link rel="alternate" hreflang="zh-tw" href="https://kage-shadows.github.io/zh-tw/" />
+<link rel="alternate" hreflang="en" href="https://kage-shadows.github.io/en/" />
 
 
 <meta property="og:title" content="Kage - Shadows" />
@@ -159,15 +160,14 @@
 
     </main><footer class="footer">
     <span>© 2021 Kage</span><span>&middot;</span><span><a href="https://kage-shadows.github.io/en/about-us">About Us</a></span>
-<span>&middot;</span><span><a href="https://kage-shadows.github.io/en/contact-us">Contact Us</a></span>
-    <br />
+<span>&middot;</span><span><a href="https://kage-shadows.github.io/en/contact-us">Contact Us</a></span><br />
     <span>Powered by <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a></span>
     <span>&middot;</span>
     <span>Theme <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)">
     <button class="top-link" id="top-link" type="button" accesskey="g">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
             <path d="M12 6H0l6-6z" />
         </svg>
     </button>
@@ -185,13 +185,17 @@
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             var id = this.getAttribute("href").substr(1);
-            document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                behavior: "smooth"
-            });
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
             if (id === "top") {
                 history.replaceState(null, null, " ");
             } else {
-                history.replaceState(null, null, `#${id}`);
+                history.pushState(null, null, `#${id}`);
             }
         });
     });
